@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+    color: black;
+    line-height: 1.6;
+}
+
+header {
+    background: #6A1E55;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+span.pro{
+    color: #cf67ca;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #cf67ca;
+    text-decoration: underline;
+    transition: 0.1s ease;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+main p {
+    font-size: 1.2rem;
+    color: #02457a;
+    margin-bottom: 2rem;
+}
+
+.profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.profile-card {
+    border: 1px solid #97cadb;
+    padding: 1rem;
+    border-radius: 5px;
+    background: #d6e8ee;
+}
+
+.profile-card h3 {
+    margin-top: 0;
+    color: #02457a;
+}
+
+/*---*/
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 2rem;
+
+}
+
+.member {
+    text-align: center;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 1rem;
+    background: #6A1E55;
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.member img {
+    max-width: 100%;
+    border-radius: 30%;
+    /*margin-bottom: 1rem;*/
+    border-radius: 15px; overflow: hidden; background-color: #003d5c;
+}
+
+.name {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: whitesmoke;
+}
+
+.name .accent {
+    color: #eb75e5;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1rem;
+    color: whitesmoke;
+    line-height: 1.5;
+}
+
+a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #cf67ca;
+    transition: .1s ease-in;
+}
+
+
+footer {
+    background: #3B1C32;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Parallax scroll */
+/* .profile {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    position: relative;
+    animation: parallax 3s infinite;
+} */
+
+@keyframes parallax {
+    0% {
+        transform: translateZ(-50px);
+    }
+    50% {
+        transform: translateZ(0px);
+    }
+    100% {
+        transform: translateZ(-50px);
+    }
+}
